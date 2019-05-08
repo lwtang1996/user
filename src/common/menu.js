@@ -33,7 +33,7 @@ const menuData = [
     path: "alliance",
     children: [
       {
-        name: "联盟信息ijijijij",
+        name: "联盟信息",
         path: "alliance-info",
       },
       {
