@@ -1215,3 +1215,23 @@
 2019-06-18 16:44:29,166 INFO 2730 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/app.js"
 2019-06-18 16:44:29,166 INFO 2730 [egg-watcher:agent] watcher start success
 2019-06-18 16:44:29,187 INFO 2730 [egg:core] dump config after ready, 4ms
+2019-06-19 14:45:00,954 INFO 13523 [egg:logger] init all loggers with options: {"dir":"/home/hust/user/sp-dashboard/src/logs/user-dashboard","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"user-dashboard-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-06-19 14:45:00,963 INFO 13523 [egg:core] dump config after load, 5ms
+2019-06-19 14:45:00,999 INFO 13523 [egg-watcher] Start watching: ["/home/hust/user/sp-dashboard/src/app","/home/hust/user/sp-dashboard/src/config","/home/hust/user/sp-dashboard/src/mocks","/home/hust/user/sp-dashboard/src/mocks_proxy","/home/hust/user/sp-dashboard/src/app.js"]
+2019-06-19 14:45:00,999 INFO 13523 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/app"
+2019-06-19 14:45:01,000 INFO 13523 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/config"
+2019-06-19 14:45:01,000 INFO 13523 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/mocks"
+2019-06-19 14:45:01,000 INFO 13523 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/mocks_proxy"
+2019-06-19 14:45:01,000 INFO 13523 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/app.js"
+2019-06-19 14:45:01,000 INFO 13523 [egg-watcher:agent] watcher start success
+2019-06-19 14:45:01,025 INFO 13523 [egg:core] dump config after ready, 9ms
+2019-06-19 14:52:55,003 INFO 13892 [egg:logger] init all loggers with options: {"dir":"/home/hust/user/sp-dashboard/src/logs/user-dashboard","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"user-dashboard-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-06-19 14:52:55,017 INFO 13892 [egg:core] dump config after load, 6ms
+2019-06-19 14:52:55,044 INFO 13892 [egg-watcher] Start watching: ["/home/hust/user/sp-dashboard/src/app","/home/hust/user/sp-dashboard/src/config","/home/hust/user/sp-dashboard/src/mocks","/home/hust/user/sp-dashboard/src/mocks_proxy","/home/hust/user/sp-dashboard/src/app.js"]
+2019-06-19 14:52:55,044 INFO 13892 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/app"
+2019-06-19 14:52:55,044 INFO 13892 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/config"
+2019-06-19 14:52:55,044 INFO 13892 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/mocks"
+2019-06-19 14:52:55,044 INFO 13892 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/mocks_proxy"
+2019-06-19 14:52:55,044 INFO 13892 [egg-watcher] Start watching: "/home/hust/user/sp-dashboard/src/app.js"
+2019-06-19 14:52:55,045 INFO 13892 [egg-watcher:agent] watcher start success
+2019-06-19 14:52:55,060 INFO 13892 [egg:core] dump config after ready, 4ms

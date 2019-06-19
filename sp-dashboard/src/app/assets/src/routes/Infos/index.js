@@ -110,7 +110,8 @@ class Infos extends React.Component {
                     submitting: true,
                 });
                 const dataSubmit = values;
-                dataSubmit.peer_name = this.state.data;
+                dataSubmit.peer = 2;
+                //dataSubmit.peer = this.state.data;
                 //console.log(dataSubmit);
                 this.props.dispatch({
                     type: 'information/orgInitial',
@@ -170,6 +171,18 @@ class Infos extends React.Component {
             <Option value={cask_size}>{cask_size}</Option>
           )
         );
+        const networks = ['fabric-1.4'];
+        const network_Options = networks.map(
+          (network) => (
+            <Option value={network}>{network}</Option>
+          )
+        );
+        const consensus_plugins = ['Solo', 'Kafka'];
+        const consensus_Options = consensus_plugins.map(
+          (consensus) => (
+            <Option value={consensus}>{consensus}</Option>
+          )
+        );
 
         return (
             <PageHeaderLayout>
@@ -188,7 +201,7 @@ class Infos extends React.Component {
                             )}
                     </Form.Item>
                     <Form.Item label="组织名称">
-                        {getFieldDecorator('sporg_name', {
+                        {getFieldDecorator('sp_org_name', {
                             rules: [{ required: true, message: 'Please input the organization name!'}],
                         })(
                             <Input />
@@ -235,8 +248,8 @@ class Infos extends React.Component {
                             <TextArea rows={4} />
                         )}
                     </Form.Item> */}
-                    <Form.Item label="CA根证书">
-                      {getFieldDecorator('ca_pem', {
+                    <Form.Item label="CA">
+                      {getFieldDecorator('ca', {
                         initialValue: CA_PEM[0],
                         rules: [
                           {
@@ -246,8 +259,8 @@ class Infos extends React.Component {
                         ],
                       })(<Select>{CA_PEM_Options}</Select>)}
                     </Form.Item>
-                    <Form.Item label="CA根私钥">
-                      {getFieldDecorator('ca_sk', {
+                    <Form.Item label="order">
+                      {getFieldDecorator('orderer', {
                         initialValue: CA_SK[0],
                         rules: [
                           {
@@ -256,6 +269,28 @@ class Infos extends React.Component {
                           },
                         ],
                       })(<Select>{CA_SK_Options}</Select>)}
+                    </Form.Item>
+                    <Form.Item label="网络类型">
+                      {getFieldDecorator('network_type', {
+                        initialValue: networks[0],
+                        rules: [
+                          {
+                            required: true,
+                            message: 'need',
+                          },
+                        ],
+                      })(<Select>{network_Options}</Select>)}
+                    </Form.Item>
+                    <Form.Item label="共识策略">
+                      {getFieldDecorator('consensus_plugin', {
+                        initialValue: consensus_plugins[0],
+                        rules: [
+                          {
+                            required: true,
+                            message: 'need',
+                          },
+                        ],
+                      })(<Select>{consensus_Options}</Select>)}
                     </Form.Item>
                     <Form.Item label="节点">
                         <Button type="primary" icon="plus" onClick={this.handleAdd}>Add Node</Button>

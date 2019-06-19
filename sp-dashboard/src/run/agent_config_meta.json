@@ -264,7 +264,8 @@
       "socket.io-client": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
       "stream-wormhole": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
       "string-format": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
-      "url-polyfill": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+      "url-polyfill": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "validator": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
       "autod": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",

@@ -108,3 +108,22 @@ res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"ab
 pid: 2740
 hostname: hust-H110M-S2
 
+2019-06-19 14:53:33,352 ERROR 13902 [-/127.0.0.1/-/162ms POST /api/spinit] nodejs.RequestError: connect ECONNREFUSED 0.0.0.0:8088, POST http://0.0.0.0:8088/spinit -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)
+code: "ECONNREFUSED"
+errno: "ECONNREFUSED"
+syscall: "connect"
+address: "0.0.0.0"
+port: 8088
+name: "RequestError"
+data: undefined
+path: "/spinit"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":9,"keepAliveSocket":false,"requestUrls":["http://0.0.0.0:8088/spinit"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 13902
+hostname: hust-H110M-S2
+

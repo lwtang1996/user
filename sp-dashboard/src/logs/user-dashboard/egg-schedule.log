@@ -402,3 +402,11 @@
 2019-06-18 16:44:30,012 INFO 2730 [Timer] /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 26130988ms at 2019-06-19 00:00:01.000
 2019-06-18 16:44:29,737 INFO 2740 [egg-schedule]: register schedule /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/clean_log.js
 2019-06-18 16:44:29,737 INFO 2740 [egg-schedule]: register schedule /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-06-19 14:45:01,594 INFO 13533 [egg-schedule]: register schedule /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-06-19 14:45:01,594 INFO 13533 [egg-schedule]: register schedule /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-06-19 14:45:02,022 INFO 13523 [Timer] /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 33297980ms at 2019-06-20 00:00:00.002
+2019-06-19 14:45:02,022 INFO 13523 [Timer] /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 33298978ms at 2019-06-20 00:00:01.000
+2019-06-19 14:52:55,697 INFO 13902 [egg-schedule]: register schedule /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-06-19 14:52:55,697 INFO 13902 [egg-schedule]: register schedule /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-06-19 14:52:56,543 INFO 13892 [Timer] /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 32823458ms at 2019-06-20 00:00:00.001
+2019-06-19 14:52:56,544 INFO 13892 [Timer] /home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 32824457ms at 2019-06-20 00:00:01.001

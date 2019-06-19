@@ -1911,3 +1911,39 @@
 2019-06-18 16:44:29,987 INFO 2740 [egg-watcher:application] watcher start success
 2019-06-18 16:44:30,002 INFO 2740 [egg:core] dump config after ready, 7ms
 2019-06-18 16:44:38,364 INFO 2740 [egg-view-nunjucks] loading templates from ["/home/hust/user/sp-dashboard/src/app/view"]
+2019-06-19 14:45:01,571 INFO 13533 [egg:logger] init all loggers with options: {"dir":"/home/hust/user/sp-dashboard/src/logs/user-dashboard","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"user-dashboard-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-06-19 14:45:01,595 INFO 13533 [egg-multipart] stream mode enable
+2019-06-19 14:45:01,731 INFO 13533 [egg-mongoose] connecting mongodb://127.0.0.1:27017/hostManager
+2019-06-19 14:45:01,788 INFO 13533 [egg-static] starting static serve /static/ -> /home/hust/user/sp-dashboard/src/app/assets/public/
+2019-06-19 14:45:01,790 INFO 13533 [egg-security] use methodnoallow middleware
+2019-06-19 14:45:01,790 INFO 13533 [egg-security] use noopen middleware
+2019-06-19 14:45:01,791 INFO 13533 [egg-security] use nosniff middleware
+2019-06-19 14:45:01,791 INFO 13533 [egg-security] use xssProtection middleware
+2019-06-19 14:45:01,791 INFO 13533 [egg-security] use xframe middleware
+2019-06-19 14:45:01,792 INFO 13533 [egg-security] use dta middleware
+2019-06-19 14:45:01,792 INFO 13533 [egg-security] compose 6 middlewares into one security middleware
+2019-06-19 14:45:01,801 INFO 13533 [egg:core] dump config after load, 6ms
+2019-06-19 14:45:01,811 INFO 13533 [egg-mongoose] starting...
+2019-06-19 14:45:01,849 INFO 13533 [egg-watcher:application] watcher start success
+2019-06-19 14:45:01,998 INFO 13533 [egg-mongoose] mongodb://127.0.0.1:27017/hostManager connected successfully
+2019-06-19 14:45:01,998 INFO 13533 [egg-mongoose] instance[0] start successfully
+2019-06-19 14:45:02,017 INFO 13533 [egg:core] dump config after ready, 8ms
+2019-06-19 14:45:11,725 INFO 13533 [egg-view-nunjucks] loading templates from ["/home/hust/user/sp-dashboard/src/app/view"]
+2019-06-19 14:52:55,675 INFO 13902 [egg:logger] init all loggers with options: {"dir":"/home/hust/user/sp-dashboard/src/logs/user-dashboard","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"user-dashboard-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-06-19 14:52:55,697 INFO 13902 [egg-multipart] stream mode enable
+2019-06-19 14:52:56,383 INFO 13902 [egg-mongoose] connecting mongodb://127.0.0.1:27017/hostManager
+2019-06-19 14:52:56,478 INFO 13902 [egg-static] starting static serve /static/ -> /home/hust/user/sp-dashboard/src/app/assets/public/
+2019-06-19 14:52:56,481 INFO 13902 [egg-security] use methodnoallow middleware
+2019-06-19 14:52:56,481 INFO 13902 [egg-security] use noopen middleware
+2019-06-19 14:52:56,481 INFO 13902 [egg-security] use nosniff middleware
+2019-06-19 14:52:56,482 INFO 13902 [egg-security] use xssProtection middleware
+2019-06-19 14:52:56,482 INFO 13902 [egg-security] use xframe middleware
+2019-06-19 14:52:56,482 INFO 13902 [egg-security] use dta middleware
+2019-06-19 14:52:56,482 INFO 13902 [egg-security] compose 6 middlewares into one security middleware
+2019-06-19 14:52:56,491 INFO 13902 [egg:core] dump config after load, 5ms
+2019-06-19 14:52:56,493 INFO 13902 [egg-mongoose] starting...
+2019-06-19 14:52:56,523 INFO 13902 [egg-mongoose] mongodb://127.0.0.1:27017/hostManager connected successfully
+2019-06-19 14:52:56,524 INFO 13902 [egg-mongoose] instance[0] start successfully
+2019-06-19 14:52:56,529 INFO 13902 [egg-watcher:application] watcher start success
+2019-06-19 14:52:56,539 INFO 13902 [egg:core] dump config after ready, 4ms
+2019-06-19 14:53:01,062 INFO 13902 [egg-view-nunjucks] loading templates from ["/home/hust/user/sp-dashboard/src/app/view"]
