@@ -1,0 +1,411 @@
+{
+  "logger": {
+    "level": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+    "dir": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "encoding": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "env": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "outputJSON": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "buffer": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "appLogName": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "coreLogName": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "agentLogName": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "errorLogName": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+    "dir": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+    "dynamic": "/home/hust/user/sp-dashboard/src/node_modules/egg-static/config/config.default.js",
+    "preload": "/home/hust/user/sp-dashboard/src/node_modules/egg-static/config/config.default.js",
+    "buffer": "/home/hust/user/sp-dashboard/src/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/home/hust/user/sp-dashboard/src/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "defaultViewEngine": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+    "defaultExtension": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+    "mapping": {
+      ".tpl": "/home/hust/user/sp-dashboard/src/config/config.default.js"
+    },
+    "root": "/home/hust/user/sp-dashboard/src/node_modules/egg-view/config/config.default.js",
+    "cache": "/home/hust/user/sp-dashboard/src/node_modules/egg-view/config/config.local.js"
+  },
+  "mongoose": {
+    "client": {
+      "url": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+      "options": "/home/hust/user/sp-dashboard/src/config/config.default.js"
+    },
+    "url": "/home/hust/user/sp-dashboard/src/node_modules/egg-mongoose/config/config.default.js",
+    "options": "/home/hust/user/sp-dashboard/src/node_modules/egg-mongoose/config/config.default.js",
+    "loadModel": "/home/hust/user/sp-dashboard/src/node_modules/egg-mongoose/config/config.default.js",
+    "app": "/home/hust/user/sp-dashboard/src/node_modules/egg-mongoose/config/config.default.js",
+    "agent": "/home/hust/user/sp-dashboard/src/node_modules/egg-mongoose/config/config.default.js"
+  },
+  "operator": {
+    "url": {
+      "base": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+      "login": "/home/hust/user/sp-dashboard/src/config/config.default.js"
+    }
+  },
+  "security": {
+    "csrf": {
+      "enable": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+      "useSession": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "headerName": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "queryName": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "value": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "value": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "value": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "policy": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "operations": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+  "keys": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+  "middleware": "/home/hust/user/sp-dashboard/src/config/config.default.js",
+  "session": {
+    "maxAge": "/home/hust/user/sp-dashboard/src/node_modules/egg-session/config/config.default.js",
+    "key": "/home/hust/user/sp-dashboard/src/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/home/hust/user/sp-dashboard/src/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/home/hust/user/sp-dashboard/src/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/home/hust/user/sp-dashboard/src/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/home/hust/user/sp-dashboard/src/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/home/hust/user/sp-dashboard/src/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/home/hust/user/sp-dashboard/src/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/home/hust/user/sp-dashboard/src/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/home/hust/user/sp-dashboard/src/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/home/hust/user/sp-dashboard/src/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/home/hust/user/sp-dashboard/src/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/home/hust/user/sp-dashboard/src/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/home/hust/user/sp-dashboard/src/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/home/hust/user/sp-dashboard/src/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/home/hust/user/sp-dashboard/src/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/home/hust/user/sp-dashboard/src/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/home/hust/user/sp-dashboard/src/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/home/hust/user/sp-dashboard/src/node_modules/egg-watcher/config/config.default.js",
+      "development": "/home/hust/user/sp-dashboard/src/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/home/hust/user/sp-dashboard/src/node_modules/egg-schedule/config/config.default.js",
+      "file": "/home/hust/user/sp-dashboard/src/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/home/hust/user/sp-dashboard/src/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "files": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/home/hust/user/sp-dashboard/src/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/home/hust/user/sp-dashboard/src/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/home/hust/user/sp-dashboard/src/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/home/hust/user/sp-dashboard/src/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/home/hust/user/sp-dashboard/src/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/home/hust/user/sp-dashboard/src/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/home/hust/user/sp-dashboard/src/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "/home/hust/user/sp-dashboard/src/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/home/hust/user/sp-dashboard/src/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/home/hust/user/sp-dashboard/src/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/home/hust/user/sp-dashboard/src/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/home/hust/user/sp-dashboard/src/node_modules/egg-view-nunjucks/config/config.local.js"
+  },
+  "io": {
+    "init": "/home/hust/user/sp-dashboard/src/node_modules/egg-socket.io/config/config.default.js",
+    "namespace": {
+      "/": {
+        "connectionMiddleware": "/home/hust/user/sp-dashboard/src/node_modules/egg-socket.io/config/config.default.js",
+        "packetMiddleware": "/home/hust/user/sp-dashboard/src/node_modules/egg-socket.io/config/config.default.js"
+      }
+    }
+  },
+  "passportLocal": "/home/hust/user/sp-dashboard/src/node_modules/egg-passport-local/config/config.default.js",
+  "env": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "name": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "proxy": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "version": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "description": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "private": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "@antv/data-set": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "@babel/core": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "@babel/polyfill": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "adm-zip": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "antd": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "await-stream-ready": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "babel-plugin-transform-decorators-legacy": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "babel-runtime": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "bizcharts": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "bizcharts-plugin-slider": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "classnames": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "dva": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "dva-loading": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-mongoose": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-passport": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-passport-local": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-socket.io": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-static": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-validate": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-view-assets": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "enquire-js": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "enum": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "js-cookie": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "jsonfile": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "less": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "lodash": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "lodash-decorators": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "moment": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "numeral": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "omit.js": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "path-to-regexp": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "prop-types": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "qs": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "rc-animate": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "rc-banner-anim": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "rc-drawer-menu": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "rc-queue-anim": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "rc-tween-one": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "react": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "react-container-query": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "react-document-title": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "react-dom": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "react-fittext": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "react-intl": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "react-particles-js": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "rollbar": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "shelljs": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "socket.io-client": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "stream-wormhole": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "string-format": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "url-polyfill": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "autod-egg": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-bin": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-ci": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "egg-mock": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "eslint": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "webstorm-disable-index": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "if-env": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "babel-eslint": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "babel-plugin-dva-hmr": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "babel-plugin-import": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "babel-plugin-module-resolver": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "cross-env": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "cross-port-killer": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "enzyme": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "eslint-config-airbnb": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "eslint-config-prettier": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "eslint-plugin-babel": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "eslint-plugin-compat": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "eslint-plugin-import": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "eslint-plugin-jsx-a11y": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "eslint-plugin-react": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "gh-pages": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "husky": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "lint-staged": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "mockjs": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "prettier": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "pro-download": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "redbox-react": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "regenerator-runtime": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "roadhog": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "roadhog-api-doc": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "stylelint": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "stylelint-config-prettier": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "stylelint-config-standard": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "stop": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "start:prod": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "start:dev": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "dev": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "debug": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "test": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "test-local": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "cov": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "lint": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "lint:fix": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "lint:ui": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "lint:ui-fix": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "ci": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "autod": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "build": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "build:dev": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "prettier": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "build:prod": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "url": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    },
+    "author": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "license": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "HOME": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "rundir": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "notFound": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "sitefile": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "middlewares": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "httpClient": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "encoding": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "formLimit": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "strict": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "depth": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    }
+  },
+  "httpclient": {
+    "enableDNSCache": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "logging": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "port": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "hostname": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js"
+}

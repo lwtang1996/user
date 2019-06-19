@@ -1,2 +1,4 @@
 ##ignore this file##
-/node_modules/
+node_modules/
+
+sp-dashboard/**/public/

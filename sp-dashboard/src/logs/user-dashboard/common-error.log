@@ -1,0 +1,110 @@
+2019-06-15 13:40:47,030 ERROR 13236 [-/127.0.0.1/-/16ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg/lib/application.js:257:15)
+    at Object.get cookies [as cookies] (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 13236
+hostname: hust-H110M-S2
+
+2019-06-15 14:55:46,382 ERROR 14964 [-/127.0.0.1/-/8ms GET /index] nodejs.ReferenceError: ctx is not defined
+    at HomeController.index (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/app/controller/home.js:6:5)
+    at Object.callFn (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+    at next (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-compose/index.js:45:18)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-compose/index.js:36:12
+
+pid: 14964
+hostname: hust-H110M-S2
+
+2019-06-18 09:45:13,766 ERROR 24689 [-/127.0.0.1/-/17ms POST /api/auth/login] nodejs.TypeError: ctx.service.user.login is not a function
+    at passport.verify (/home/hust/user/sp-dashboard/src/app/router.js:20:45)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:69:22
+    at EggPassport.doVerify (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:75:7)
+    at Strategy.passport.use.LocalStrategy [as _verify] (/home/hust/user/sp-dashboard/src/app/router.js:15:18)
+    at Strategy.authenticate (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:348:16)
+    at authenticate (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:349:7)
+    at Promise (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/framework.js:83:7)
+    at new Promise (<anonymous>)
+    at Object.passportAuthenticate (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/framework.js:77:11)
+    at Object.callFn (/home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+    at next (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:45:18)
+    at /home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+
+pid: 24689
+hostname: hust-H110M-S2
+
+2019-06-18 09:47:52,346 ERROR 24810 [-/127.0.0.1/-/60ms POST /api/auth/login] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at UserService.login (/home/hust/user/sp-dashboard/src/app/service/user.js:8:49)
+    at passport.verify (/home/hust/user/sp-dashboard/src/app/router.js:20:45)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:69:22
+    at EggPassport.doVerify (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:75:7)
+    at Strategy.passport.use.LocalStrategy [as _verify] (/home/hust/user/sp-dashboard/src/app/router.js:15:18)
+    at Strategy.authenticate (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:348:16)
+    at authenticate (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:349:7)
+    at Promise (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/framework.js:83:7)
+    at new Promise (<anonymous>)
+    at Object.passportAuthenticate (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/framework.js:77:11)
+    at Object.callFn (/home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+    at next (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:45:18)
+    at /home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/router.js:190:18
+
+pid: 24810
+hostname: hust-H110M-S2
+
+2019-06-18 16:37:28,519 ERROR 2189 [-/127.0.0.1/-/13ms POST /api/spinit] nodejs.RequestError: connect ECONNREFUSED 0.0.0.0:8088, POST http://0.0.0.0:8088/spinit -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)
+code: "ECONNREFUSED"
+errno: "ECONNREFUSED"
+syscall: "connect"
+address: "0.0.0.0"
+port: 8088
+name: "RequestError"
+data: undefined
+path: "/spinit"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":7,"keepAliveSocket":false,"requestUrls":["http://0.0.0.0:8088/spinit"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 2189
+hostname: hust-H110M-S2
+
+2019-06-18 16:45:06,732 ERROR 2740 [-/127.0.0.1/-/17ms POST /api/spinit] nodejs.RequestError: connect ECONNREFUSED 0.0.0.0:8088, POST http://0.0.0.0:8088/spinit -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)
+code: "ECONNREFUSED"
+errno: "ECONNREFUSED"
+syscall: "connect"
+address: "0.0.0.0"
+port: 8088
+name: "RequestError"
+data: undefined
+path: "/spinit"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":8,"keepAliveSocket":false,"requestUrls":["http://0.0.0.0:8088/spinit"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 2740
+hostname: hust-H110M-S2
+
