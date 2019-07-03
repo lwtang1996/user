@@ -1,0 +1,90 @@
+@startuml
+Title "Cello Dashboard Api UML图(Host & Cluster)"
+
+package moudles.host{
+    class HostHandler
+    
+    Object host_handler
+    HostHandler .. host_handler : < instance    
+}
+
+package moudles.cluster{
+    class ClusterHandler
+
+    Object cluster_handler
+    ClusterHandler .. cluster_handler : < instance
+}
+
+package flask{
+   class Blueprint
+}
+
+package resources.cluster_api{
+    Object bp_cluster_api {
+        -- flask router --
+        cluster_actions()
+        cluster_query(cluster_id)
+        cluster_create()
+        cluster_list()
+    }
+
+    Blueprint .. bp_cluster_api : < instance
+
+    Object front_rest_v2{
+        -- flask router --
+        cluster_apply_dep()
+        cluster_list()
+        cluster_release_dep()
+        cluster_delete()
+        cluster_query(cluster_id)
+        cluster_actions()
+    }
+
+    Blueprint .. front_rest_v2 : < instance
+}
+
+package resources.cluster_view{
+    
+    Object bp_cluster_view{
+        -- flask router, limited whit login required --
+        cluster_info_show(cluster_id)
+        clusters_show()
+    }
+
+    Blueprint .. bp_cluster_view : < instance
+
+}
+
+package resources.host_view{
+    Object bp_host_view{
+        -- flask router, limited whit login required --
+        host_info(host_id) 
+        hosts_show()
+    }
+
+    Blueprint .. bp_host_view : < instance
+
+}
+
+package resources.host_api{
+    Object bp_host_api{
+        -- flask router --
+        host_info(host_id) 
+        hosts_list()
+        host_query(host_id)
+        host_create()
+        host_update()
+        host_delete()
+        host_actions()
+    }
+
+    Blueprint .. bp_host_api : < instance
+}
+
+bp_host_view ..> host_handler
+bp_host_api ..> host_handler
+bp_cluster_view ..> cluster_handler
+bp_cluster_view ..> host_handler
+bp_cluster_api ..> cluster_handler
+front_rest_v2 ..> cluster_handler
+@enduml

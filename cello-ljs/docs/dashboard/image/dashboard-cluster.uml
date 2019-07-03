@@ -1,0 +1,32 @@
+@startuml
+Title "Cello dashboard cluster类图"
+
+
+package agent.cluster{
+
+interface ClusterBase{
+   create(self, *args, **kwargs)
+   delete(self, *args, **kwargs)
+   start(self, *args, **kwargs)
+   stop(self, *args, **kwargs)
+}
+
+
+ClusterBase<|.. agent.cluster.ClusterOnKubernetes
+ClusterBase<|.. agent.cluster.ClusterOnVsphere
+ClusterBase<|.. agent.cluster.ClusterOnDocker
+
+class agent.cluster.ClusterOnKubernetes
+class agent.cluster.ClusterOnVsphere
+class agent.cluster.ClusterOnDocker
+}
+
+
+package moudles.cluster{
+class moudles.cluster.ClusterHandler
+
+moudles.cluster.ClusterHandler ..> agent.cluster.ClusterOnDocker
+moudles.cluster.ClusterHandler ..> agent.cluster.ClusterOnKubernetes
+moudles.cluster.ClusterHandler ..> agent.cluster.ClusterOnVsphere
+}
+@enduml

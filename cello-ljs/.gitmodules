@@ -1,0 +1,3 @@
+[submodule "cello-ursa"]
+	path = cello-ursa
+	url = http://172.168.160.18/handchainPlatform/cello-ursa.git

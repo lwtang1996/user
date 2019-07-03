@@ -1,0 +1,34 @@
+@startuml
+Title "Cello dashboard host类图"
+
+
+package agent.host{
+
+interface HostBase{
+   create(self, *args, **kwargs)
+   delete(self, *args, **kwargs)
+   reset(self, *args, **kwargs)
+   is_active(self, *args)
+   fillup(self, *args)
+}
+
+class agent.host.KubernetesHost
+class agent.host.VsphereHost
+class agent.host.DockerHost
+
+
+
+HostBase<|.. agent.host.KubernetesHost
+HostBase<|.. agent.host.VsphereHost
+HostBase<|.. agent.host.DockerHost
+}
+
+
+package moudles.host{
+class moudles.host.HostHandler
+
+moudles.host.HostHandler ..> agent.host.KubernetesHost
+moudles.host.HostHandler ..> agent.host.VsphereHost
+moudles.host.HostHandler ..> agent.host.DockerHost
+}
+@enduml
