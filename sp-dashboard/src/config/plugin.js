@@ -5,10 +5,10 @@ exports.nunjucks = {
   package: 'egg-view-nunjucks',
 };
 
-exports.io = {
-  enable: true,
-  package: 'egg-socket.io',
-};
+// exports.io = {
+//   enable: true,
+//   package: 'egg-socket.io',
+// };
 
 exports.passport = {
   enable: true,

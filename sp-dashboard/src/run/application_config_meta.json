@@ -188,15 +188,6 @@
     "lstripBlocks": "/home/hust/user/sp-dashboard/src/node_modules/egg-view-nunjucks/config/config.default.js",
     "cache": "/home/hust/user/sp-dashboard/src/node_modules/egg-view-nunjucks/config/config.local.js"
   },
-  "io": {
-    "init": "/home/hust/user/sp-dashboard/src/node_modules/egg-socket.io/config/config.default.js",
-    "namespace": {
-      "/": {
-        "connectionMiddleware": "/home/hust/user/sp-dashboard/src/node_modules/egg-socket.io/config/config.default.js",
-        "packetMiddleware": "/home/hust/user/sp-dashboard/src/node_modules/egg-socket.io/config/config.default.js"
-      }
-    }
-  },
   "passportLocal": "/home/hust/user/sp-dashboard/src/node_modules/egg-passport-local/config/config.default.js",
   "env": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
   "name": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
@@ -236,6 +227,7 @@
       "egg-view-nunjucks": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
       "enquire-js": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
       "enum": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
+      "fabric-client": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
       "js-cookie": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
       "jsonfile": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",
       "less": "/home/hust/user/sp-dashboard/src/node_modules/egg/config/config.default.js",

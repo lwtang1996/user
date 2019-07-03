@@ -30,9 +30,12 @@ module.exports = app => {
   router.get('/', controller.home.index);
   // router.post('/api/auth/login', app.controller.home.login);
   router.post('/api/auth/login', passport.authenticate('local', {successRedirect: process.env.WEBROOT}));
-  router.post('/api/spinit', controller.home.spinit);
+  router.post('/api/sp_org', controller.home.spinit);
+  router.get('/api/sp_org_initialized', controller.home.fetch_spOrg);
+  router.get('/api/channel_fetch_orgs', controller.channel.fetch_orgs);
+  router.post('/api/create_channel', controller.channel.create_channel);
 
-  io.of('/').route('join', io.controller.home.join);
+  // io.of('/').route('join', io.controller.home.join);
 
   router.prefix(process.env.WEBROOT);
   

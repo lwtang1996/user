@@ -10,9 +10,14 @@ export async function queryOrgs() {
 }
 
 export async function orgInitial(params) {
-    console.log(params);
-    return request('/api/spinit', {
+    //console.log(params);
+    return request('/api/sp_org', {
         method: 'POST',
         body: params,
     });
+}
+
+export async function spOrg_initialized() {
+    console.log('in service');
+    return request('/api/sp_org_initialized');
 }

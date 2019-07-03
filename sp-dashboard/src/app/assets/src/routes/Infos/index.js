@@ -177,7 +177,7 @@ class Infos extends React.Component {
             <Option value={network}>{network}</Option>
           )
         );
-        const consensus_plugins = ['Solo', 'Kafka'];
+        const consensus_plugins = ['solo', 'kafka'];
         const consensus_Options = consensus_plugins.map(
           (consensus) => (
             <Option value={consensus}>{consensus}</Option>

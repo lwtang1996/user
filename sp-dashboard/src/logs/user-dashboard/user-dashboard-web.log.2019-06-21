@@ -1,0 +1,563 @@
+2019-06-15 13:40:47,032 ERROR 13236 [-/127.0.0.1/-/16ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg/lib/application.js:257:15)
+    at Object.get cookies [as cookies] (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 13236
+hostname: hust-H110M-S2
+
+2019-06-15 14:55:46,382 ERROR 14964 [-/127.0.0.1/-/8ms GET /index] nodejs.ReferenceError: ctx is not defined
+    at HomeController.index (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/app/controller/home.js:6:5)
+    at Object.callFn (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+    at next (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-compose/index.js:45:18)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-compose/index.js:36:12
+
+pid: 14964
+hostname: hust-H110M-S2
+
+2019-06-15 16:50:25,716 WARN 18530 [-/127.0.0.1/-/71ms POST /api/auth/login] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-06-15 16:50:25,719 WARN 18530 [-/127.0.0.1/-/73ms POST /api/auth/login] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-override/index.js:38:12)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 18530
+hostname: hust-H110M-S2
+
+2019-06-15 16:54:10,218 WARN 18647 [-/127.0.0.1/-/7ms POST /api/auth/login] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-06-15 16:54:10,219 WARN 18647 [-/127.0.0.1/-/8ms POST /api/auth/login] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-override/index.js:38:12)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 18647
+hostname: hust-H110M-S2
+
+2019-06-15 16:57:23,587 WARN 18647 [-/127.0.0.1/-/1ms POST /api/auth/login] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-06-15 16:57:23,588 WARN 18647 [-/127.0.0.1/-/2ms POST /api/auth/login] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-override/index.js:38:12)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 18647
+hostname: hust-H110M-S2
+
+2019-06-15 18:04:01,359 WARN 19611 [-/127.0.0.1/-/205ms POST /api/auth/login] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-06-15 18:04:01,363 WARN 19611 [-/127.0.0.1/-/209ms POST /api/auth/login] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-override/index.js:38:12)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 19611
+hostname: hust-H110M-S2
+
+2019-06-15 18:16:06,628 WARN 19796 [-/127.0.0.1/-/122ms POST /api/auth/login] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-06-15 18:16:06,633 WARN 19796 [-/127.0.0.1/-/126ms POST /api/auth/login] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-session/index.js:41:13)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa-override/index.js:38:12)
+    at dispatch (/home/hust/cello/cello-0.9/cello/sp-dashboard/src/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 19796
+hostname: hust-H110M-S2
+
+2019-06-18 09:45:13,767 ERROR 24689 [-/127.0.0.1/-/17ms POST /api/auth/login] nodejs.TypeError: ctx.service.user.login is not a function
+    at passport.verify (/home/hust/user/sp-dashboard/src/app/router.js:20:45)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:69:22
+    at EggPassport.doVerify (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:75:7)
+    at Strategy.passport.use.LocalStrategy [as _verify] (/home/hust/user/sp-dashboard/src/app/router.js:15:18)
+    at Strategy.authenticate (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:348:16)
+    at authenticate (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:349:7)
+    at Promise (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/framework.js:83:7)
+    at new Promise (<anonymous>)
+    at Object.passportAuthenticate (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/framework.js:77:11)
+    at Object.callFn (/home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+    at next (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:45:18)
+    at /home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+
+pid: 24689
+hostname: hust-H110M-S2
+
+2019-06-18 09:47:52,347 ERROR 24810 [-/127.0.0.1/-/60ms POST /api/auth/login] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at UserService.login (/home/hust/user/sp-dashboard/src/app/service/user.js:8:49)
+    at passport.verify (/home/hust/user/sp-dashboard/src/app/router.js:20:45)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:69:22
+    at EggPassport.doVerify (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:75:7)
+    at Strategy.passport.use.LocalStrategy [as _verify] (/home/hust/user/sp-dashboard/src/app/router.js:15:18)
+    at Strategy.authenticate (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:348:16)
+    at authenticate (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:349:7)
+    at Promise (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/framework.js:83:7)
+    at new Promise (<anonymous>)
+    at Object.passportAuthenticate (/home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/framework.js:77:11)
+    at Object.callFn (/home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:44:32)
+    at next (/home/hust/user/sp-dashboard/src/node_modules/koa-compose/index.js:45:18)
+    at /home/hust/user/sp-dashboard/src/node_modules/@eggjs/router/lib/router.js:190:18
+
+pid: 24810
+hostname: hust-H110M-S2
+
+2019-06-18 09:50:09,793 WARN 24948 [-/127.0.0.1/-/23ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 24948
+hostname: hust-H110M-S2
+
+2019-06-18 10:08:33,517 WARN 25191 [-/127.0.0.1/-/31ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 25191
+hostname: hust-H110M-S2
+
+2019-06-18 10:10:00,454 WARN 25282 [-/127.0.0.1/-/32ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 25282
+hostname: hust-H110M-S2
+
+2019-06-18 10:14:38,552 WARN 25499 [-/127.0.0.1/-/39ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 25499
+hostname: hust-H110M-S2
+
+2019-06-18 10:17:23,397 WARN 25638 [-/127.0.0.1/-/43ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 25638
+hostname: hust-H110M-S2
+
+2019-06-18 10:18:08,538 WARN 25740 [-/127.0.0.1/-/49ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 25740
+hostname: hust-H110M-S2
+
+2019-06-18 10:18:37,032 WARN 25831 [-/127.0.0.1/-/30ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 25831
+hostname: hust-H110M-S2
+
+2019-06-18 10:19:39,946 WARN 25949 [-/127.0.0.1/-/67ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 25949
+hostname: hust-H110M-S2
+
+2019-06-18 10:20:44,267 WARN 26046 [-/127.0.0.1/-/77ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 26046
+hostname: hust-H110M-S2
+
+2019-06-18 10:31:11,876 WARN 26381 [-/127.0.0.1/-/36ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 26381
+hostname: hust-H110M-S2
+
+2019-06-18 10:31:22,904 WARN 26381 [-/127.0.0.1/-/8ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 26381
+hostname: hust-H110M-S2
+
+2019-06-18 10:33:29,435 WARN 26503 [-/127.0.0.1/-/59ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 26503
+hostname: hust-H110M-S2
+
+2019-06-18 10:37:01,413 WARN 26761 [-/127.0.0.1/-/15ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 26761
+hostname: hust-H110M-S2
+
+2019-06-18 11:13:22,619 WARN 29559 [-/127.0.0.1/-/84ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 29559
+hostname: hust-H110M-S2
+
+2019-06-18 11:22:58,006 WARN 30459 [-/127.0.0.1/-/16ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 30459
+hostname: hust-H110M-S2
+
+2019-06-18 11:23:15,706 WARN 30459 [-/127.0.0.1/-/7ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 30459
+hostname: hust-H110M-S2
+
+2019-06-18 16:37:28,519 ERROR 2189 [-/127.0.0.1/-/13ms POST /api/spinit] nodejs.RequestError: connect ECONNREFUSED 0.0.0.0:8088, POST http://0.0.0.0:8088/spinit -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)
+code: "ECONNREFUSED"
+errno: "ECONNREFUSED"
+syscall: "connect"
+address: "0.0.0.0"
+port: 8088
+name: "RequestError"
+data: undefined
+path: "/spinit"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":7,"keepAliveSocket":false,"requestUrls":["http://0.0.0.0:8088/spinit"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 2189
+hostname: hust-H110M-S2
+
+2019-06-18 16:43:09,765 WARN 2435 [-/127.0.0.1/-/35ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 2435
+hostname: hust-H110M-S2
+
+2019-06-18 16:43:35,020 WARN 2435 [-/127.0.0.1/-/6ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 2435
+hostname: hust-H110M-S2
+
+2019-06-18 16:45:06,732 ERROR 2740 [-/127.0.0.1/-/17ms POST /api/spinit] nodejs.RequestError: connect ECONNREFUSED 0.0.0.0:8088, POST http://0.0.0.0:8088/spinit -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)
+code: "ECONNREFUSED"
+errno: "ECONNREFUSED"
+syscall: "connect"
+address: "0.0.0.0"
+port: 8088
+name: "RequestError"
+data: undefined
+path: "/spinit"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":8,"keepAliveSocket":false,"requestUrls":["http://0.0.0.0:8088/spinit"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 2740
+hostname: hust-H110M-S2
+
+2019-06-19 14:53:33,353 ERROR 13902 [-/127.0.0.1/-/162ms POST /api/spinit] nodejs.RequestError: connect ECONNREFUSED 0.0.0.0:8088, POST http://0.0.0.0:8088/spinit -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)
+code: "ECONNREFUSED"
+errno: "ECONNREFUSED"
+syscall: "connect"
+address: "0.0.0.0"
+port: 8088
+name: "RequestError"
+data: undefined
+path: "/spinit"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":9,"keepAliveSocket":false,"requestUrls":["http://0.0.0.0:8088/spinit"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 13902
+hostname: hust-H110M-S2
+
+2019-06-21 10:51:39,793 WARN 18020 [-/127.0.0.1/-/136ms POST /api/auth/login] nodejs.AuthenticationError: Unauthorized
+    at allFailed (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:159:21)
+    at attempt (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:167:28)
+    at Strategy.strategy.fail (/home/hust/user/sp-dashboard/src/node_modules/passport/lib/middleware/authenticate.js:284:9)
+    at verified (/home/hust/user/sp-dashboard/src/node_modules/passport-local/lib/strategy.js:82:30)
+    at /home/hust/user/sp-dashboard/src/node_modules/egg-passport/lib/passport.js:74:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+name: "AuthenticationError"
+message: "Unauthorized"
+status: 401
+pid: 18020
+hostname: hust-H110M-S2
+
+2019-06-21 14:58:13,636 WARN 23805 [-/127.0.0.1/-/106ms POST /api/spinit] nodejs.JSONResponseFormatError: Unexpected token < in JSON at position 0 (data json format: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n"), POST http://0.0.0.0:8088/spinit 404 (connected: true, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 1)
+headers: {"content-type":"text/html","content-length":"232","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 06:58:13 GMT"}
+headers: {"content-type":"text/html","content-length":"232","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 06:58:13 GMT"}
+    at JSON.parse (<anonymous>)
+    at parseJSON (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:1082:24)
+    at /home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:812:23
+    at decodeContent (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:619:14)
+    at IncomingMessage.<anonymous> (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:793:7)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+name: "JSONResponseFormatError"
+data: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n"
+path: "/spinit"
+status: 404
+headers: {"content-type":"text/html","content-length":"232","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 06:58:13 GMT"}
+res: {"status":404,"statusCode":404,"statusMessage":"NOT FOUND","headers":{"content-type":"text/html","content-length":"232","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 06:58:13 GMT"},"size":232,"aborted":false,"rt":8,"keepAliveSocket":false,"data":"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n","requestUrls":["http://0.0.0.0:8088/spinit"],"timing":null,"remoteAddress":"127.0.0.1","remotePort":8088,"socketHandledRequests":1,"socketHandledResponses":1}
+pid: 23805
+hostname: hust-H110M-S2
+
+2019-06-21 15:29:46,115 ERROR 24490 [-/127.0.0.1/-/278ms POST /api/sp_org] nodejs.JSONResponseFormatError: Unexpected token < in JSON at position 0 (data json format: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n  \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n  <head>\n    <title>TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement. // Werkzeug Debugger</title>\n    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\"\n        type=\"text/css\">\n    <!-- We need to make sure this has a favicon so that the debugger does\n         not by accident trigger " ...skip... "local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\", line 1850, in finalize_request\n    response = self.make_response(rv)\n  File \"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\", line 1976, in make_response\n    'The view function did not return a valid response. The'\nTypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.\n\n-->\n"), POST http://0.0.0.0:8088/api/sp_org 500 (connected: true, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 1)
+headers: {"content-type":"text/html; charset=utf-8","x-xss-protection":"0","connection":"close","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 07:29:46 GMT"}
+headers: {"content-type":"text/html; charset=utf-8","x-xss-protection":"0","connection":"close","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 07:29:46 GMT"}
+    at JSON.parse (<anonymous>)
+    at parseJSON (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:1082:24)
+    at /home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:812:23
+    at decodeContent (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:619:14)
+    at IncomingMessage.<anonymous> (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:793:7)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+name: "JSONResponseFormatError"
+data: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n  \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n  <head>\n    <title>TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement. // Werkzeug Debugger</title>\n    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\"\n        type=\"text/css\">\n    <!-- We need to make sure this has a favicon so that the debugger does\n         not by accident trigger a request to /favicon.ico which might\n         change the application state. -->\n    <link rel=\"shortcut icon\"\n        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=jquery.js\"></script>\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>\n    <script type=\"text/javascript\">\n      var TRACEBACK = 139852798414408,\n          CONSOLE_MODE = false,\n          EVALEX = true,\n          EVALEX_TRUSTED = false,\n          SECRET = \"l25ikfaTvrnjS1DzZNxJ\";\n    </script>\n  </head>\n  <body style=\"background-color: #fff\">\n    <div class=\"debugger\">\n<h1>TypeError</h1>\n<div class=\"detail\">\n  <p class=\"errormsg\">TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.</p>\n</div>\n<h2 class=\"traceback\">Traceback <em>(most recent call last)</em></h2>\n<div class=\"traceback\">\n  \n  <ul><li><div class=\"frame\" id=\"frame-139852736277920\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2328</em>,\n      in <code class=\"function\">__call__</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>def __call__(self, environ, start_response):</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>WSGI application. This calls :meth:`wsgi_app` which can be</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>wrapped to applying middleware.&quot;&quot;&quot;</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.wsgi_app(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def __repr__(self):</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>return '&lt;%s %r&gt;' % (</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>self.__class__.__name__,</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>self.name,</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736278368\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2314</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>return response(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>finally:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736278424\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1760</em>,\n      in <code class=\"function\">handle_exception</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span># if we want to repropagate the exception, we can attempt to</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># raise it with the whole traceback in case we can do that</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># (the function was actually called from the except part)</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># otherwise, we just raise the error again</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if exc_value is e:</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>reraise(exc_type, exc_value, tb)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>else:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise e</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>self.log_exception((exc_type, exc_value, tb))</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>if handler is None:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736277808\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/_compat.py\"</cite>,\n      line <em class=\"line\">36</em>,\n      in <code class=\"function\">reraise</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">    </span>import collections.abc as collections_abc</pre>\n<pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>def reraise(tp, value, tb=None):</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>if value.__traceback__ is not tb:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>raise value.with_traceback(tb)</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>raise value</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>implements_to_string = _identity</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\"></span>else:</pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>text_type = unicode</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736398224\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2311</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">        </span>ctx = self.request_context(environ)</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>error = None</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736400744\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1835</em>,\n      in <code class=\"function\">full_dispatch_request</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(self, rv, from_error_handler=False):</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>&quot;&quot;&quot;Given the return value from a view function this finalizes</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>the request by converting it into a response and invoking the</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>postprocessing functions.  This is invoked for both normal</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736400800\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1850</em>,\n      in <code class=\"function\">finalize_request</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">        </span>with the `from_error_handler` flag.  If enabled, failures in</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>r...(17259)"
+path: "/api/sp_org"
+status: 500
+headers: {"content-type":"text/html; charset=utf-8","x-xss-protection":"0","connection":"close","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 07:29:46 GMT"}
+res: {"status":500,"statusCode":500,"statusMessage":"INTERNAL SERVER ERROR","headers":{"content-type":"text/html; charset=utf-8","x-xss-protection":"0","connection":"close","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 07:29:46 GMT"},"size":17259,"aborted":false,"rt":123,"keepAliveSocket":false,"data":"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n  \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n  <head>\n    <title>TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement. // Werkzeug Debugger</title>\n    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\"\n        type=\"text/css\">\n    <!-- We need to make sure this has a favicon so that the debugger does\n         not by accident trigger a request to /favicon.ico which might\n         change the application state. -->\n    <link rel=\"shortcut icon\"\n        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=jquery.js\"></script>\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>\n    <script type=\"text/javascript\">\n      var TRACEBACK = 139852798414408,\n          CONSOLE_MODE = false,\n          EVALEX = true,\n          EVALEX_TRUSTED = false,\n          SECRET = \"l25ikfaTvrnjS1DzZNxJ\";\n    </script>\n  </head>\n  <body style=\"background-color: #fff\">\n    <div class=\"debugger\">\n<h1>TypeError</h1>\n<div class=\"detail\">\n  <p class=\"errormsg\">TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.</p>\n</div>\n<h2 class=\"traceback\">Traceback <em>(most recent call last)</em></h2>\n<div class=\"traceback\">\n  \n  <ul><li><div class=\"frame\" id=\"frame-139852736277920\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2328</em>,\n      in <code class=\"function\">__call__</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>def __call__(self, environ, start_response):</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>WSGI application. This calls :meth:`wsgi_app` which can be</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>wrapped to applying middleware.&quot;&quot;&quot;</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.wsgi_app(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def __repr__(self):</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>return '&lt;%s %r&gt;' % (</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>self.__class__.__name__,</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>self.name,</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736278368\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2314</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>return response(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>finally:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736278424\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1760</em>,\n      in <code class=\"function\">handle_exception</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span># if we want to repropagate the exception, we can attempt to</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># raise it with the whole traceback in case we can do that</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># (the function was actually called from the except part)</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># otherwise, we just raise the error again</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if exc_value is e:</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>reraise(exc_type, exc_value, tb)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>else:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise e</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>self.log_exception((exc_type, exc_value, tb))</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>if handler is None:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736277808\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/_compat.py\"</cite>,\n      line <em class=\"line\">36</em>,\n      in <code class=\"function\">reraise</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">    </span>import collections.abc as collections_abc</pre>\n<pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>def reraise(tp, value, tb=None):</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>if value.__traceback__ is not tb:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>raise value.with_traceback(tb)</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>raise value</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>implements_to_string = _identity</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\"></span>else:</pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>text_type = unicode</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736398224\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2311</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">        </span>ctx = self.request_context(environ)</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>error = None</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736400744\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1835</em>,\n      in <code class=\"function\">full_dispatch_request</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(self, rv, from_error_handler=False):</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>&quot;&quot;&quot;Given the return value from a view function this finalizes</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>the request by converting it into a response and invoking the</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>postprocessing functions.  This is invoked for both normal</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-139852736400800\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1850</em>,\n      in <code class=\"function\">finalize_request</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">        </span>with the `from_error_handler` flag.  If enabled, failures in</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>r...(17259)","requestUrls":["http://0.0.0.0:8088/api/sp_org"],"timing":null,"remoteAddress":"127.0.0.1","remotePort":8088,"socketHandledRequests":1,"socketHandledResponses":1}
+pid: 24490
+hostname: hust-H110M-S2
+
+2019-06-21 17:32:18,077 ERROR 27044 [-/127.0.0.1/-/326ms POST /api/sp_org] nodejs.JSONResponseFormatError: Unexpected token < in JSON at position 0 (data json format: "<html>\n  <head>\n    <title>Internal Server Error</title>\n  </head>\n  <body>\n    <h1><p>Internal Server Error</p></h1>\n    \n  </body>\n</html>\n"), POST http://0.0.0.0:8088/api/sp_org 500 (connected: true, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 1)
+headers: {"connection":"close","content-type":"text/html","content-length":"141"}
+headers: {"connection":"close","content-type":"text/html","content-length":"141"}
+    at JSON.parse (<anonymous>)
+    at parseJSON (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:1082:24)
+    at /home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:812:23
+    at decodeContent (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:619:14)
+    at IncomingMessage.<anonymous> (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:793:7)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+name: "JSONResponseFormatError"
+data: "<html>\n  <head>\n    <title>Internal Server Error</title>\n  </head>\n  <body>\n    <h1><p>Internal Server Error</p></h1>\n    \n  </body>\n</html>\n"
+path: "/api/sp_org"
+status: 500
+headers: {"connection":"close","content-type":"text/html","content-length":"141"}
+res: {"status":500,"statusCode":500,"statusMessage":"Internal Server Error","headers":{"connection":"close","content-type":"text/html","content-length":"141"},"size":141,"aborted":false,"rt":267,"keepAliveSocket":false,"data":"<html>\n  <head>\n    <title>Internal Server Error</title>\n  </head>\n  <body>\n    <h1><p>Internal Server Error</p></h1>\n    \n  </body>\n</html>\n","requestUrls":["http://0.0.0.0:8088/api/sp_org"],"timing":null,"remoteAddress":"127.0.0.1","remotePort":8088,"socketHandledRequests":1,"socketHandledResponses":1}
+pid: 27044
+hostname: hust-H110M-S2
+
+2019-06-21 17:39:58,277 ERROR 27044 [-/127.0.0.1/-/78ms POST /api/sp_org] nodejs.JSONResponseFormatError: Unexpected token < in JSON at position 0 (data json format: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n  \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n  <head>\n    <title>TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement. // Werkzeug Debugger</title>\n    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\"\n        type=\"text/css\">\n    <!-- We need to make sure this has a favicon so that the debugger does\n         not by accident trigger " ...skip... "local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\", line 1850, in finalize_request\n    response = self.make_response(rv)\n  File \"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\", line 1976, in make_response\n    'The view function did not return a valid response. The'\nTypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.\n\n-->\n"), POST http://0.0.0.0:8088/api/sp_org 500 (connected: true, keepalive socket: false, agent status: {"createSocketCount":2,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.0:8088:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 1)
+headers: {"content-type":"text/html; charset=utf-8","x-xss-protection":"0","connection":"close","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 09:39:58 GMT"}
+headers: {"content-type":"text/html; charset=utf-8","x-xss-protection":"0","connection":"close","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 09:39:58 GMT"}
+    at JSON.parse (<anonymous>)
+    at parseJSON (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:1082:24)
+    at /home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:812:23
+    at decodeContent (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:619:14)
+    at IncomingMessage.<anonymous> (/home/hust/user/sp-dashboard/src/node_modules/urllib/lib/urllib.js:793:7)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+name: "JSONResponseFormatError"
+data: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n  \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n  <head>\n    <title>TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement. // Werkzeug Debugger</title>\n    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\"\n        type=\"text/css\">\n    <!-- We need to make sure this has a favicon so that the debugger does\n         not by accident trigger a request to /favicon.ico which might\n         change the application state. -->\n    <link rel=\"shortcut icon\"\n        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=jquery.js\"></script>\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>\n    <script type=\"text/javascript\">\n      var TRACEBACK = 140317506188624,\n          CONSOLE_MODE = false,\n          EVALEX = true,\n          EVALEX_TRUSTED = false,\n          SECRET = \"UdBfc8Yiteo6MaEEL4pR\";\n    </script>\n  </head>\n  <body style=\"background-color: #fff\">\n    <div class=\"debugger\">\n<h1>TypeError</h1>\n<div class=\"detail\">\n  <p class=\"errormsg\">TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.</p>\n</div>\n<h2 class=\"traceback\">Traceback <em>(most recent call last)</em></h2>\n<div class=\"traceback\">\n  \n  <ul><li><div class=\"frame\" id=\"frame-140317506190360\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2328</em>,\n      in <code class=\"function\">__call__</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>def __call__(self, environ, start_response):</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>WSGI application. This calls :meth:`wsgi_app` which can be</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>wrapped to applying middleware.&quot;&quot;&quot;</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.wsgi_app(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def __repr__(self):</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>return '&lt;%s %r&gt;' % (</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>self.__class__.__name__,</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>self.name,</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190752\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2314</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>return response(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>finally:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190808\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1760</em>,\n      in <code class=\"function\">handle_exception</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span># if we want to repropagate the exception, we can attempt to</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># raise it with the whole traceback in case we can do that</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># (the function was actually called from the except part)</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># otherwise, we just raise the error again</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if exc_value is e:</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>reraise(exc_type, exc_value, tb)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>else:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise e</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>self.log_exception((exc_type, exc_value, tb))</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>if handler is None:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190864\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/_compat.py\"</cite>,\n      line <em class=\"line\">36</em>,\n      in <code class=\"function\">reraise</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">    </span>import collections.abc as collections_abc</pre>\n<pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>def reraise(tp, value, tb=None):</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>if value.__traceback__ is not tb:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>raise value.with_traceback(tb)</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>raise value</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>implements_to_string = _identity</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\"></span>else:</pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>text_type = unicode</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190584\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2311</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">        </span>ctx = self.request_context(environ)</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>error = None</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190976\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1835</em>,\n      in <code class=\"function\">full_dispatch_request</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(self, rv, from_error_handler=False):</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>&quot;&quot;&quot;Given the return value from a view function this finalizes</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>the request by converting it into a response and invoking the</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>postprocessing functions.  This is invoked for both normal</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506191032\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1850</em>,\n      in <code class=\"function\">finalize_request</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">        </span>with the `from_error_handler` flag.  If enabled, failures in</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>r...(17259)"
+path: "/api/sp_org"
+status: 500
+headers: {"content-type":"text/html; charset=utf-8","x-xss-protection":"0","connection":"close","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 09:39:58 GMT"}
+res: {"status":500,"statusCode":500,"statusMessage":"INTERNAL SERVER ERROR","headers":{"content-type":"text/html; charset=utf-8","x-xss-protection":"0","connection":"close","server":"Werkzeug/0.15.4 Python/3.6.7","date":"Fri, 21 Jun 2019 09:39:58 GMT"},"size":17259,"aborted":false,"rt":76,"keepAliveSocket":false,"data":"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n  \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n  <head>\n    <title>TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement. // Werkzeug Debugger</title>\n    <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\"\n        type=\"text/css\">\n    <!-- We need to make sure this has a favicon so that the debugger does\n         not by accident trigger a request to /favicon.ico which might\n         change the application state. -->\n    <link rel=\"shortcut icon\"\n        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=jquery.js\"></script>\n    <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>\n    <script type=\"text/javascript\">\n      var TRACEBACK = 140317506188624,\n          CONSOLE_MODE = false,\n          EVALEX = true,\n          EVALEX_TRUSTED = false,\n          SECRET = \"UdBfc8Yiteo6MaEEL4pR\";\n    </script>\n  </head>\n  <body style=\"background-color: #fff\">\n    <div class=\"debugger\">\n<h1>TypeError</h1>\n<div class=\"detail\">\n  <p class=\"errormsg\">TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.</p>\n</div>\n<h2 class=\"traceback\">Traceback <em>(most recent call last)</em></h2>\n<div class=\"traceback\">\n  \n  <ul><li><div class=\"frame\" id=\"frame-140317506190360\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2328</em>,\n      in <code class=\"function\">__call__</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>def __call__(self, environ, start_response):</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>WSGI application. This calls :meth:`wsgi_app` which can be</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>wrapped to applying middleware.&quot;&quot;&quot;</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.wsgi_app(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def __repr__(self):</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>return '&lt;%s %r&gt;' % (</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>self.__class__.__name__,</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>self.name,</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190752\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2314</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>return response(environ, start_response)</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>finally:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190808\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1760</em>,\n      in <code class=\"function\">handle_exception</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span># if we want to repropagate the exception, we can attempt to</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># raise it with the whole traceback in case we can do that</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># (the function was actually called from the except part)</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span># otherwise, we just raise the error again</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if exc_value is e:</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>reraise(exc_type, exc_value, tb)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>else:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>raise e</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>self.log_exception((exc_type, exc_value, tb))</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>if handler is None:</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190864\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/_compat.py\"</cite>,\n      line <em class=\"line\">36</em>,\n      in <code class=\"function\">reraise</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">    </span>import collections.abc as collections_abc</pre>\n<pre class=\"line before\"><span class=\"ws\"></span> </pre>\n<pre class=\"line before\"><span class=\"ws\">    </span>def reraise(tp, value, tb=None):</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>if value.__traceback__ is not tb:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>raise value.with_traceback(tb)</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>raise value</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>implements_to_string = _identity</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\"></span>else:</pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>text_type = unicode</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190584\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">2311</em>,\n      in <code class=\"function\">wsgi_app</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">        </span>ctx = self.request_context(environ)</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>error = None</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>try:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>ctx.push()</pre>\n<pre class=\"line current\"><span class=\"ws\">                </span>response = self.full_dispatch_request()</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except Exception as e:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = e</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>response = self.handle_exception(e)</pre>\n<pre class=\"line after\"><span class=\"ws\">            </span>except:</pre>\n<pre class=\"line after\"><span class=\"ws\">                </span>error = sys.exc_info()[1]</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506190976\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1835</em>,\n      in <code class=\"function\">full_dispatch_request</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">            </span>rv = self.preprocess_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>if rv is None:</pre>\n<pre class=\"line before\"><span class=\"ws\">                </span>rv = self.dispatch_request()</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>except Exception as e:</pre>\n<pre class=\"line before\"><span class=\"ws\">            </span>rv = self.handle_user_exception(e)</pre>\n<pre class=\"line current\"><span class=\"ws\">        </span>return self.finalize_request(rv)</pre>\n<pre class=\"line after\"><span class=\"ws\"></span> </pre>\n<pre class=\"line after\"><span class=\"ws\">    </span>def finalize_request(self, rv, from_error_handler=False):</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>&quot;&quot;&quot;Given the return value from a view function this finalizes</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>the request by converting it into a response and invoking the</pre>\n<pre class=\"line after\"><span class=\"ws\">        </span>postprocessing functions.  This is invoked for both normal</pre></div>\n</div>\n\n<li><div class=\"frame\" id=\"frame-140317506191032\">\n  <h4>File <cite class=\"filename\">\"/home/hust/.local/share/virtualenvs/cello-host-management-xeGEp5aT/lib/python3.6/site-packages/flask/app.py\"</cite>,\n      line <em class=\"line\">1850</em>,\n      in <code class=\"function\">finalize_request</code></h4>\n  <div class=\"source \"><pre class=\"line before\"><span class=\"ws\">        </span>with the `from_error_handler` flag.  If enabled, failures in</pre>\n<pre class=\"line before\"><span class=\"ws\">        </span>r...(17259)","requestUrls":["http://0.0.0.0:8088/api/sp_org"],"timing":null,"remoteAddress":"127.0.0.1","remotePort":8088,"socketHandledRequests":1,"socketHandledResponses":1}
+pid: 27044
+hostname: hust-H110M-S2
+

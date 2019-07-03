@@ -103,7 +103,6 @@
         "/home/hust/user/sp-dashboard/src/node_modules/egg-static/config/locales",
         "/home/hust/user/sp-dashboard/src/node_modules/egg-view/config/locales",
         "/home/hust/user/sp-dashboard/src/node_modules/egg-view-nunjucks/config/locales",
-        "/home/hust/user/sp-dashboard/src/node_modules/egg-socket.io/config/locales",
         "/home/hust/user/sp-dashboard/src/node_modules/egg-passport/config/locales",
         "/home/hust/user/sp-dashboard/src/node_modules/egg-passport-local/config/locales",
         "/home/hust/user/sp-dashboard/src/node_modules/egg-mongoose/config/locales",
@@ -192,18 +191,6 @@
       "lstripBlocks": false,
       "cache": false
     },
-    "io": {
-      "init": {
-        "path": "/socket.io",
-        "allowRequest": "<Function bound >"
-      },
-      "namespace": {
-        "/": {
-          "connectionMiddleware": [],
-          "packetMiddleware": []
-        }
-      }
-    },
     "passportLocal": {
       "passReqToCallback": true
     },
@@ -257,6 +244,7 @@
         "egg-view-nunjucks": "^2.2.0",
         "enquire-js": "^0.2.1",
         "enum": "^2.5.0",
+        "fabric-client": "^1.4.3",
         "js-cookie": "^2.2.0",
         "jsonfile": "^4.0.0",
         "less": "2.7.2",
@@ -465,8 +453,8 @@
     "onClientError": null,
     "operator": {
       "url": {
-        "base": "http://undefined/api",
-        "login": "http://undefined/api/auth/login"
+        "base": "http://0.0.0.0:8080/api",
+        "login": "http://0.0.0.0:8080/api/auth/login"
       }
     },
     "operations": "<Enum>",
@@ -647,19 +635,6 @@
       "from": "/home/hust/user/sp-dashboard/src/config/plugin.js",
       "path": "/home/hust/user/sp-dashboard/src/node_modules/egg-view-nunjucks",
       "version": "2.2.0"
-    },
-    "io": {
-      "enable": true,
-      "package": "egg-socket.io",
-      "name": "io",
-      "dependencies": [
-        "session"
-      ],
-      "optionalDependencies": [],
-      "env": [],
-      "from": "/home/hust/user/sp-dashboard/src/config/plugin.js",
-      "path": "/home/hust/user/sp-dashboard/src/node_modules/egg-socket.io",
-      "version": "4.1.5"
     },
     "passport": {
       "enable": true,

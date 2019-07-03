@@ -30,8 +30,46 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/spinit",
-    "regexp": "/^\\/api\\/spinit(?:\\/(?=$))?$/",
+    "path": "/api/sp_org",
+    "regexp": "/^\\/api\\/sp_org(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/sp_org_initialized",
+    "regexp": "/^\\/api\\/sp_org_initialized(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/channel_fetch_orgs",
+    "regexp": "/^\\/api\\/channel_fetch_orgs(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/create_channel",
+    "regexp": "/^\\/api\\/create_channel(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

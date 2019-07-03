@@ -67,12 +67,12 @@ export default {
         }
       });
     },
-    socketIO() {
-      const socketUrl = `${window.location.protocol}//${window.location.hostname}:${
-        window.location.port
-      }/socket.io`;
-      const socket = io(socketUrl);
-      socket.emit('join', { id: window.user_id });
-    },
+    // socketIO() {
+    //   const socketUrl = `${window.location.protocol}//${window.location.hostname}:${
+    //     window.location.port
+    //   }/socket.io`;
+    //   const socket = io(socketUrl);
+    //   socket.emit('join', { id: window.user_id });
+    // },
   },
 };

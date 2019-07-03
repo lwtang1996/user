@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Cello User Dashboard</title>
     <link type="text/css" rel="stylesheet" href="{{webRoot}}static/index.css">
-    <link rel="icon" type="image/x-icon" href="{{webRoot}}static/logo.ico" />
+    <link rel="icon" type="image/x-icon" href="{{webRoot}}static/logo.svg" />
 </head>
 <body>
 <div id="root"></div>

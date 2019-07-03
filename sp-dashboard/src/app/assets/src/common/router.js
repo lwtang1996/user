@@ -84,6 +84,11 @@ export const getRouterData = app => {
         import("../routes/Infos")
       ),
     },
+    "/infos/initialized": {
+      component: dynamicWrapper(app, ["infos"], () =>
+        import("../routes/Infos/initialized")
+      ),
+    },
     '/host/index': {
       component: dynamicWrapper(app, ['host'], () => import('../routes/Host')),
     },
@@ -111,6 +116,12 @@ export const getRouterData = app => {
     },
     "/alliance/alliance-create": {
       component: dynamicWrapper(app, ["organization","alliance"], () => import('../routes/Alliance/Create')),
+    },
+    "/channel/channel-create": {
+      component: dynamicWrapper(app, ["channel"], () => import('../routes/Channel/Create')),
+    },
+    "/channel/channel-info": {
+      component: dynamicWrapper(app, ["channel"], () => import('../routes/Channel')),
     },
   };
   // Get name from ./menu.js or just set it in the router data.

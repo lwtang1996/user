@@ -50,8 +50,8 @@ const menuData = [
       {
         name: "已初始化",
         path: "initialized",
-        hideInMenu: true,
-        hideInBreadcrumb: false,
+        // hideInMenu: true,
+        // hideInBreadcrumb: false,
       },
     ]
   },
@@ -90,6 +90,26 @@ const menuData = [
       {
         name: "创建联盟",
         path: "alliance-create",
+      },
+      // {
+      //   name: "我创建的联盟",
+      //   path: "my-alliance",
+      // },
+   ],
+  },
+  {
+    name: "通道管理",
+    path: "channel",
+    icon: "desktop",
+    children: [
+      
+      {
+        name: "创建通道",
+        path: "channel-create",
+      },
+      {
+        name: "通道信息",
+        path: "channel-info",
       },
       // {
       //   name: "我创建的联盟",

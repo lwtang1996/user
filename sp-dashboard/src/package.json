@@ -29,6 +29,7 @@
     "egg-view-nunjucks": "^2.2.0",
     "enquire-js": "^0.2.1",
     "enum": "^2.5.0",
+    "fabric-client": "^1.4.3",
     "js-cookie": "^2.2.0",
     "jsonfile": "^4.0.0",
     "less": "2.7.2",
