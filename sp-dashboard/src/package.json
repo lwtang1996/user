@@ -59,7 +59,7 @@
     "stream-wormhole": "^1.0.3",
     "string-format": "^2.0.0",
     "url-polyfill": "^1.0.10",
-    "validator": "^11.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
