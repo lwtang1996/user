@@ -19,7 +19,7 @@
     "fs-extra": "^4.0.2",
     "gridfs-stream": "^1.1.1",
     "jsonfile": "^4.0.0",
-    "jsonwebtoken": "^7.3.0",
+    "jsonwebtoken": "^9.0.0",
     "log4js": "^0.6.38",
     "moment": "^2.19.1",
     "moment-range": "^3.0.3",
